@@ -1,9 +1,9 @@
 <?php
 
-namespace Martinschenk\CookieConsentModal\Livewire;
+namespace Martinschenk\LivewireCookieConsent\Livewire;
 
 use LivewireUI\Modal\ModalComponent;
-use Martinschenk\CookieConsentModal\CookieConsentModalService;
+use Martinschenk\LivewireCookieConsent\CookieConsentModalService;
 
 class CookieConsentEdit extends ModalComponent
 {
@@ -17,21 +17,21 @@ class CookieConsentEdit extends ModalComponent
         if ($service->consentCookieExists()){
             $this->consentCookieValue = $service->getConsentCookieValue();
 
-            if ($this->consentCookieValue == config('cookie-consent-modal.cookie_value_both')){
+            if ($this->consentCookieValue == config('livewire-cookie-consent.cookie_value_both')){
                 $this->analyticsCookies = true;
                 $this->marketingCookies = true;
             }
-            if ($this->consentCookieValue == config('cookie-consent-modal.cookie_value_none')){
+            if ($this->consentCookieValue == config('livewire-cookie-consent.cookie_value_none')){
                 $this->analyticsCookies = false;
                 $this->marketingCookies = false;
             }
 
-            if ($this->consentCookieValue == config('cookie-consent-modal.cookie_value_analytics')){
+            if ($this->consentCookieValue == config('livewire-cookie-consent.cookie_value_analytics')){
                 $this->analyticsCookies = true;
                 $this->marketingCookies = false;
             }
 
-            if ($this->consentCookieValue == config('cookie-consent-modal.cookie_value_marketing')){
+            if ($this->consentCookieValue == config('livewire-cookie-consent.cookie_value_marketing')){
                 $this->analyticsCookies = false;
                 $this->marketingCookies = true;
             }
@@ -54,19 +54,19 @@ class CookieConsentEdit extends ModalComponent
     public function acceptUserSettings(CookieConsentModalService $service)
     {
         if ($this->analyticsCookies && $this->marketingCookies){
-            $this->consentCookieValue = config('cookie-consent-modal.cookie_value_both');
+            $this->consentCookieValue = config('livewire-cookie-consent.cookie_value_both');
         }
 
         if (!$this->analyticsCookies && !$this->marketingCookies){
-            $this->consentCookieValue = config('cookie-consent-modal.cookie_value_none');
+            $this->consentCookieValue = config('livewire-cookie-consent.cookie_value_none');
         }
 
         if ($this->analyticsCookies && !$this->marketingCookies){
-            $this->consentCookieValue = config('cookie-consent-modal.cookie_value_analytics');
+            $this->consentCookieValue = config('livewire-cookie-consent.cookie_value_analytics');
         }
 
         if (!$this->analyticsCookies && $this->marketingCookies){
-            $this->consentCookieValue = config('cookie-consent-modal.cookie_value_marketing');
+            $this->consentCookieValue = config('livewire-cookie-consent.cookie_value_marketing');
         }
 
         $this->forceClose()->closeModal();
@@ -91,6 +91,6 @@ class CookieConsentEdit extends ModalComponent
 
     public function render()
     {
-        return view('cookie-consent-modal::cookie-consent-edit');
+        return view('livewire-cookie-consent::cookie-consent-edit');
     }
 }

@@ -1,4 +1,4 @@
-@if (Cookie::get(config('cookie-consent-modal.cookie_name')) !== null)
+@if (Cookie::get(config('livewire-cookie-consent.cookie_name')) !== null)
     {{--    <p>cookie is set</p>--}}
 @else
     {{--    <p>cookie is not set</p>--}}

@@ -1,7 +1,7 @@
 {
-    "name": "martinschenk/cookie-consent-modal",
+    "name": "martinschenk/livewire-cookie-consent",
     "description": "Laravel Livewire cookie consent modal for EU",
-    "keywords": ["laravel", "livewire", "cookie", "consent", "cookie-consent", "modal"],
+    "keywords": ["laravel", "livewire", "cookie", "consent", "cookieconsent", "modal"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -23,13 +23,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Martinschenk\\CookieConsentModal\\": "src"
+            "Martinschenk\\LivewireCookieConsent\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Martinschenk\\CookieConsentModal\\CookieConsentModalServiceProvider"
+                "Martinschenk\\LivewireCookieConsent\\CookieConsentModalServiceProvider"
             ]
         }
     }

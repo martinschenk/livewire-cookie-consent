@@ -1,9 +1,9 @@
 <?php
 
-namespace Martinschenk\CookieConsentModal\Livewire;
+namespace Martinschenk\LivewireCookieConsent\Livewire;
 
 use LivewireUI\Modal\ModalComponent;
-use Martinschenk\CookieConsentModal\CookieConsentModalService;
+use Martinschenk\LivewireCookieConsent\CookieConsentModalService;
 
 class CookieConsentModal extends ModalComponent
 {
@@ -46,6 +46,6 @@ class CookieConsentModal extends ModalComponent
 
     public function render()
     {
-        return view('cookie-consent-modal::cookie-consent-modal');
+        return view('livewire-cookie-consent::cookie-consent-modal');
     }
 }

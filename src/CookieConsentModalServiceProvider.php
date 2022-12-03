@@ -1,19 +1,19 @@
 <?php
 
-namespace Martinschenk\CookieConsentModal;
+namespace Martinschenk\LivewireCookieConsent;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use Martinschenk\CookieConsentModal\Livewire\CookieConsentEdit;
-use Martinschenk\CookieConsentModal\Livewire\CookieConsentModal;
+use Martinschenk\LivewireCookieConsent\Livewire\CookieConsentEdit;
+use Martinschenk\LivewireCookieConsent\Livewire\CookieConsentModal;
 
 
 class CookieConsentModalServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/cookie-consent-modal.php', 'cookie-consent-modal');
+        $this->mergeConfigFrom(__DIR__.'/../config/livewire-cookie-consent.php', 'livewire-cookie-consent');
     }
 
 
@@ -22,15 +22,10 @@ class CookieConsentModalServiceProvider extends ServiceProvider
         Livewire::component('cookie-consent-modal', CookieConsentModal::class);
         Livewire::component('cookie-consent-edit', CookieConsentEdit::class);
 
+        $this->loadViewsFrom(__DIR__.'/../resources/views',  'livewire-cookie-consent');
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views',  'cookie-consent-modal');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'livewire-cookie-consent');
 
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'cookie-consent-modal');
-
-        //$this->loadViewsFrom(__DIR__.'/../resources/views/livewire/', 'cookie-consent-modal');
-
-        //$this->app['view']->composer('cookie-consent-modal::index', function (View $view) {
-        //});
 
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
@@ -48,28 +43,18 @@ class CookieConsentModalServiceProvider extends ServiceProvider
     {
 
         //command to publish config file:
-        //php artisan vendor:publish --provider="Martinschenk\CookieConsentModal\CookieConsentModalServiceProvider" --tag="config"
+        //php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="config"
         $this->publishes([
-            __DIR__.'/../config/cookie-consent-modal.php' => config_path('cookie-consent-modal.php'),
+            __DIR__.'/../config/livewire-cookie-consent.php' => config_path('livewire-cookie-consent.php'),
         ], 'config');
 
-
-        //$this->publishes([
-        //    __DIR__.'/../public/' => public_path('vendor/cookie-consent-modal'),
-        //], 'public');
-
-        //This will publish livewire views
+        //This will publish views
         $this->publishes([
-            __DIR__.'/../resources/views/livewire/cookie-consent-modal' => resource_path('views/vendor/cookie-consent-modal/livewire'),
-        ], 'views');
-
-        //This will publish view
-        $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/cookie-consent-modal'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/livewire-cookie-consent'),
         ]);
 
         //This will publish language files like this -> resources/lang/vendor/cookieConsentModal/en/texts.php
-        $langPath = 'vendor/cookie-consent-modal';
+        $langPath = 'vendor/livewire-cookie-consent';
         $langPath = (function_exists('lang_path'))
             ? lang_path($langPath)
             : resource_path('lang/'.$langPath);

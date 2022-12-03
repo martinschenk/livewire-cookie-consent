@@ -21,17 +21,17 @@
         <div class="">
             <div class="">
                 <h2 id="" class="mt-5">
-                    @lang('cookie-consent-modal::texts.settings_title')
+                    @lang('livewire-cookie-consent::texts.settings_title')
                 </h2>
                 <p>
-                    {!! trans('cookie-consent-modal::texts.settings_text', [ 'policyUrl' => config("cookie-consent-modal.policy_url_$locale")]) !!}
+                    {!! trans('livewire-cookie-consent::texts.settings_text', [ 'policyUrl' => config("livewire-cookie-consent.policy_url_$locale")]) !!}
                 </p>
 
                 {{--    gtm-cookie-button is trigger in gtm --}}
                 <div class="gtm-cookie-button flex flex-items justify-end">
                     <x-jet-button wire:click="acceptAllCookies"
                                   wire:loading.attr="disabled">
-                        @lang('cookie-consent-modal::texts.settings_accept_all')
+                        @lang('livewire-cookie-consent::texts.settings_accept_all')
                     </x-jet-button>
                 </div>
 
@@ -43,40 +43,40 @@
                         <label>
                             <input class="disabled:bg-slate-400 disabled:hover:bg-slate-400" type="checkbox"
                                    id="lcc-checkbox-essential" disabled="disabled" checked="checked">
-                            <span class="font-bold ml-1">@lang('cookie-consent-modal::texts.setting_essential')</span>
+                            <span class="font-bold ml-1">@lang('livewire-cookie-consent::texts.setting_essential')</span>
                         </label>
                         <p>
-                            @lang('cookie-consent-modal::texts.setting_essential_text')
+                            @lang('livewire-cookie-consent::texts.setting_essential_text')
                         </p>
                     </div>
                     <div>
                         <label>
                             <input class="disabled:bg-slate-400 disabled:hover:bg-slate-400" type="checkbox"
                                    disabled="disabled" checked="checked">
-                            <span class="font-bold ml-1">@lang('cookie-consent-modal::texts.setting_functional')</span>
+                            <span class="font-bold ml-1">@lang('livewire-cookie-consent::texts.setting_functional')</span>
                         </label>
                         <p>
-                            @lang('cookie-consent-modal::texts.setting_functional_text')
+                            @lang('livewire-cookie-consent::texts.setting_functional_text')
                         </p>
                     </div>
                     <div>
                         <label>
                             <input wire:model="analyticsCookies"
                                    type="checkbox">
-                            <span class="font-bold ml-1">@lang('cookie-consent-modal::texts.setting_analytics')</span>
+                            <span class="font-bold ml-1">@lang('livewire-cookie-consent::texts.setting_analytics')</span>
                         </label>
                         <p>
-                            @lang('cookie-consent-modal::texts.setting_analytics_text')
+                            @lang('livewire-cookie-consent::texts.setting_analytics_text')
                         </p>
                     </div>
                     <div>
                         <label>
                             <input wire:model="marketingCookies"
                                    type="checkbox">
-                            <span class="font-bold ml-1">@lang('cookie-consent-modal::texts.setting_marketing')</span>
+                            <span class="font-bold ml-1">@lang('livewire-cookie-consent::texts.setting_marketing')</span>
                         </label>
                         <p>
-                            @lang('cookie-consent-modal::texts.setting_marketing_text')
+                            @lang('livewire-cookie-consent::texts.setting_marketing_text')
                         </p>
                     </div>
 
@@ -84,7 +84,7 @@
 
                         {{--    gtm-cookie-button is trigger in gtm --}}
                         <x-jet-button class="gtm-cookie-button" wire:loading.attr="disabled" >
-                            @lang('cookie-consent-modal::texts.settings_save')
+                            @lang('livewire-cookie-consent::texts.settings_save')
                         </x-jet-button>
                     </div>
                 </form>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Martinschenk\CookieConsentModal;
+namespace Martinschenk\LivewireCookieConsent;
 
 use Illuminate\Support\Facades\Cookie;
 
@@ -15,11 +15,11 @@ class CookieConsentModalService
 
     public function __construct()
     {
-        $this->cookieName = config('cookie-consent-modal.cookie_name');
-        $this->cookieValueBoth = config('cookie-consent-modal.cookie_value_both');
-        $this->cookieValueNone = config('cookie-consent-modal.cookie_value_none');
-        $this->consentCookieLifetime = config('cookie-consent-modal.consent_cookie_lifetime');
-        $this->refuseCookieLifetime = config('cookie-consent-modal.refuse_cookie_lifetime');
+        $this->cookieName = config('livewire-cookie-consent.cookie_name');
+        $this->cookieValueBoth = config('livewire-cookie-consent.cookie_value_both');
+        $this->cookieValueNone = config('livewire-cookie-consent.cookie_value_none');
+        $this->consentCookieLifetime = config('livewire-cookie-consent.consent_cookie_lifetime');
+        $this->refuseCookieLifetime = config('livewire-cookie-consent.refuse_cookie_lifetime');
     }
 
     public function setConsentCookieValueBoth(): void
@@ -64,10 +64,10 @@ class CookieConsentModalService
     private function isValidCookieValue($userSelectedCookieValue): bool
     {
         $posibleCookieValues = [
-            config('cookie-consent-modal.cookie_value_both'),
-            config('cookie-consent-modal.cookie_value_none'),
-            config('cookie-consent-modal.cookie_value_analytics'),
-            config('cookie-consent-modal.cookie_value_marketing'),
+            config('livewire-cookie-consent.cookie_value_both'),
+            config('livewire-cookie-consent.cookie_value_none'),
+            config('livewire-cookie-consent.cookie_value_analytics'),
+            config('livewire-cookie-consent.cookie_value_marketing'),
 
         ];
 
@@ -87,7 +87,7 @@ class CookieConsentModalService
 
     public function consentCookieExists(): bool
     {
-        if (Cookie::get(config('cookie-consent-modal.cookie_name')) !== null){
+        if (Cookie::get(config('livewire-cookie-consent.cookie_name')) !== null){
             return true;
         }
         return false;
@@ -103,7 +103,7 @@ class CookieConsentModalService
     //martin
     private function getConsentCookie()
     {
-        return request()->cookie(config('cookie-consent-modal.cookie_name'));
+        return request()->cookie(config('livewire-cookie-consent.cookie_name'));
 
         //test
         //return request()->cookie('vissittest_session');
