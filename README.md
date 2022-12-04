@@ -6,7 +6,7 @@
 
 The package includes a script & styling for a modal cookie banner where the visitor can select his/her cookie preferences.
 
-This package is based on the one from spatie: https://github.com/spatie/laravel-cookie-consent and the one from statikbe: https://github.com/statikbe/laravel-cookie-consent
+This package is based on the one from statikbe: https://github.com/statikbe/laravel-cookie-consent and requires https://github.com/wire-elements/modal
 
 With the difference to statikbe that it is using Livewire and another Google Tag Manager Configuration.
 There are also still missing ignored_paths and bots checking.
