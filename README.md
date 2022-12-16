@@ -294,7 +294,7 @@ composer require martinschenk/livewire-cookie-consent
 
 ## Security
 
-If you discover any security related issues, please email [info@statik.be](mailto:info@statik.be) instead of using the issue tracker.
+If you discover any security related issues, please email [mschenk.pda@gmail.com](mailto:mschenk.pda@gmail.com) instead of using the issue tracker.
 
 ## License
 
