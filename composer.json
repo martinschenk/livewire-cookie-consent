@@ -32,5 +32,10 @@
                 "Martinschenk\\LivewireCookieConsent\\CookieConsentModalServiceProvider"
             ]
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }
