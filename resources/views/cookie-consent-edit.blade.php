@@ -12,7 +12,7 @@
         </svg>
     </div>
 
-    <div class="flex items-left mb-0">
+    <div class="flex items-left mb-5">
         <x-jet-application-logo/>
     </div>
 

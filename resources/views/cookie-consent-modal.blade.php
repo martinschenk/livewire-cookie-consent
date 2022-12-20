@@ -2,6 +2,7 @@
 
     <div class="mb-6">
         {{-- your logo--}}
+        <x-jet-application-logo/>
     </div>
 
     <div class="mb-6">
