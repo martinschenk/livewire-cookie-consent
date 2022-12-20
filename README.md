@@ -6,7 +6,7 @@
 
 The package includes a script & styling for a modal cookie banner where the visitor can select his/her cookie preferences.
 
-This package is based on the one from statikbe: https://github.com/statikbe/laravel-cookie-consent and requires https://github.com/wire-elements/modal
+This package requires Laravel and Livewire https://github.com/livewire/livewire, as well as https://github.com/wire-elements/modal and is based on statikbe: https://github.com/statikbe/laravel-cookie-consent.
 
 With the difference to statikbe that it is using Livewire and another Google Tag Manager Configuration.
 There are also still missing ignored_paths and bots checking.
@@ -43,6 +43,23 @@ You can install the package via composer:
 ``` bash
 composer require martinschenk/livewire-cookie-consent
 ```
+
+## Include the Assets
+```html
+<html>
+<head>
+    ...
+    @livewireStyles
+</head>
+<body>
+    ...
+    @livewireScripts
+    <livewire:livewire-ui-modal />
+    @include('livewire-cookie-consent::cookieconsent')
+</body>
+</html>
+```
+
 
 [//]: # (The package will automatically register itself.)
 
