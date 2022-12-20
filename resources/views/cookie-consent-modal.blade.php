@@ -1,7 +1,7 @@
-<div class="m-8 text-sm leading-normal">
+<div class="m-8 text-sm leading-normal text-gray-600">
 
     <div class="mb-6">
-        <x-jet-application-logo/>
+        {{-- your logo--}}
     </div>
 
     <div class="mb-6">
@@ -24,11 +24,11 @@
         @lang('livewire-cookie-consent::texts.alert_essential_only')
     </button>
 
-    <secondary-button
+    <button
         class=" mb-6 w-full inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200 active:text-gray-800 active:bg-gray-50 disabled:opacity-25 transition cursor-pointer"
         wire:click="$emit('openModal', 'cookie-consent-edit')"
         wire:loading.attr="disabled">
         @lang('livewire-cookie-consent::texts.alert_settings')
-    </secondary-button>
+    </button>
 
 </div>
