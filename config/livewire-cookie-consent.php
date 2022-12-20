@@ -1,6 +1,5 @@
 <?php
 return [
-
     'cookie_name' => 'cookie-consent',
 
     'cookie_value_analytics' => '2',
@@ -16,8 +15,4 @@ return [
     'policy_url_en' => env('COOKIE_POLICY_URL_EN', '/politica-cookies'),
     'policy_url_de' => env('COOKIE_POLICY_URL_DE', '/cookie-richtlinie'),
     'policy_url_es' => env('COOKIE_POLICY_URL_ES', '/politica-cookies'),
-
-
-
-
 ];

@@ -50,8 +50,8 @@ class CookieConsentModalServiceProvider extends ServiceProvider
 
         //This will publish views
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/livewire-cookie-consent'),
-        ]);
+            __DIR__.'/../resources/views' => resource_path('views/vendor/livewire-cookie-consent'),
+        ], 'views');
 
         //This will publish language files like this -> resources/lang/vendor/cookieConsentModal/en/texts.php
         $langPath = 'vendor/livewire-cookie-consent';

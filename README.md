@@ -13,29 +13,6 @@ There are also still missing ignored_paths and bots checking.
 This package only works well, when Google Tag Manager is correctly configured. The package includes an example GTM configuration.
 
 
-* [Installation](##installation)
-
-[//]: # (* [Usage]&#40;#usage&#41;)
-
-[//]: # (* [Customising the dialog texts]&#40;#customising-the-dialog-texts&#41;)
-
-[//]: # (    + [Customising the dialog contents]&#40;#customising-the-dialog-contents&#41;)
-
-[//]: # (    + [Publishing]&#40;#publishing&#41;)
-
-[//]: # (        - [Config]&#40;#config&#41;)
-
-[//]: # (        - [Translations]&#40;#translations&#41;)
-
-[//]: # (        - [Views]&#40;#views&#41;)
-
-[//]: # (* [Configure Google Tag Manager]&#40;#configure-google-tag-manager&#41;)
-
-[//]: # (* [Security]&#40;#security&#41;)
-
-[//]: # (* [License]&#40;#license&#41;)
-
-
 ## Installation
 
 You can install the package via composer:
@@ -43,8 +20,10 @@ You can install the package via composer:
 ``` bash
 composer require martinschenk/livewire-cookie-consent
 ```
+The package will automatically register itself.
 
-## Include the Assets
+## Include Livewire directives
+Include this into your welcome.blade.php or any other base template you use.
 ```html
 <html>
 <head>
@@ -54,11 +33,77 @@ composer require martinschenk/livewire-cookie-consent
 <body>
     ...
     @livewireScripts
-    <livewire:livewire-ui-modal />
+    @livewire('livewire-ui-modal')
     @include('livewire-cookie-consent::cookieconsent')
 </body>
 </html>
 ```
+
+## Include link to open the configuration modal
+Normaly in the footer of your web include this link:
+```html
+<a class='underline' href="#" 
+   onclick="Livewire.emit('openModal', 'cookie-consent-edit')">
+        {{ __('Cookie Config') }}
+</a>
+```
+
+## Publishing
+### Customising the dialog texts and languages
+
+If you want to modify the text shown in the dialog you can publish the lang-files with this command:
+
+```bash
+php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="lang"
+```
+This will publish the f.e. english language file to lang/vendor/livewire-cookie-consent/en/texts.php . 
+```php
+
+return [
+    'alert_accept' => 'Accept all cookies',
+    'alert_essentials_only' => 'Accept only necessary cookies',
+    'alert_settings' => 'Adjust your preferences',
+    ...
+];
+
+
+```
+
+### Config
+Be careful changing the config values, because the Google Tag Manager is using them. Only change them if you know what you do.
+```bash
+php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="config"
+```
+
+This is the content of the published config-file. You'll find it in /config/livewire-cookie-consent.php
+
+
+```php
+
+return 
+
+    'cookie_name' => 'cookie-consent',
+
+    'cookie_value_analytics' => '2',
+    'cookie_value_marketing' => '3',
+    'cookie_value_both' => 'true',
+    'cookie_value_none' => 'false',
+
+    'consent_cookie_lifetime' => 60 * 24 * 365,
+    'refuse_cookie_lifetime' => 60 * 24 * 30,
+
+];
+
+
+```
+
+### Views
+If you publish the views, you can edit them. The design is done with Tailwind.
+You will find the views in resources/views/vendor/livewire-cookie-consent
+```bash
+php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="views"
+```
+
 
 
 [//]: # (The package will automatically register itself.)
@@ -227,46 +272,6 @@ composer require martinschenk/livewire-cookie-consent
 
 [//]: # (#### Config)
 
-[//]: # ()
-[//]: # (```bash)
-
-[//]: # (php artisan vendor:publish --provider="Statikbe\CookieConsent\CookieConsentServiceProvider" --tag="config")
-
-[//]: # (```)
-
-[//]: # (This is the contents of the published config-file:)
-
-[//]: # (This will read the policy urls from your env.)
-
-[//]: # (```php)
-
-[//]: # (return [)
-
-[//]: # (    'cookie_key' => '__cookie_consent',)
-
-[//]: # (    'cookie_value_analytics' => '2',)
-
-[//]: # (    'cookie_value_marketing' => '3',)
-
-[//]: # (    'cookie_value_both' => 'true',)
-
-[//]: # (    'cookie_value_none' => 'false',)
-
-[//]: # (    'cookie_expiration_days' => '365',)
-
-[//]: # (    'gtm_event' => 'pageview',)
-
-[//]: # (    'ignored_paths' => [],)
-
-[//]: # (    'policy_url_en' => env&#40;'COOKIE_POLICY_URL_EN', null&#41;,)
-
-[//]: # (    'policy_url_fr' => env&#40;'COOKIE_POLICY_URL_FR', null&#41;,)
-
-[//]: # (    'policy_url_nl' => env&#40;'COOKIE_POLICY_URL_NL', null&#41;,)
-
-[//]: # (];)
-
-[//]: # (```)
 
 [//]: # (You can customize some settings that work with your GTM.)
 
