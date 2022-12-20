@@ -4,16 +4,16 @@
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
 
 
-The package includes a script & styling for a modal cookie banner where the visitor can select his/her cookie preferences.
+The package includes script & styling for 2 modal cookie banners where the visitor can select his/her cookie preferences.
 
-This package requires Laravel and Livewire https://github.com/livewire/livewire, as well as https://github.com/wire-elements/modal and is based on statikbe: https://github.com/statikbe/laravel-cookie-consent.
+This package requires Laravel Jetstream with Livewire https://github.com/livewire/livewire, as well as https://github.com/wire-elements/modal and is based and inspired on statikbe: https://github.com/statikbe/laravel-cookie-consent.
 
-With the difference to statikbe that it is using Livewire and another Google Tag Manager Configuration.
+With the difference to statikbe that it is using Livewire and a different Google Tag Manager Configuration.
 There are also still missing ignored_paths and bots checking.
-This package only works when Google Tag Manager is correctly configured.
+This package only works well, when Google Tag Manager is correctly configured. The package includes an example GTM configuration.
 
 
-* [Installation](#installation)
+* [Installation](##installation)
 
 [//]: # (* [Usage]&#40;#usage&#41;)
 
