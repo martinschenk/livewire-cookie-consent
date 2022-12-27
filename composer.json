@@ -1,13 +1,15 @@
 {
     "name": "martinschenk/livewire-cookie-consent",
-    "description": "Laravel Livewire cookie consent modal for EU",
-    "keywords": ["laravel", "livewire", "cookie", "consent", "cookieconsent", "modal"],
-    "type": "library",
+    "description": "livewire cookie consent modals for EU with laravel livewire",
+    "keywords": ["laravel", "livewire", "cookie", "consent", "cookie-consent", "modal", "law", "EU"],
+    "homepage": "https://github.com/martinschenk/livewire-cookie-consent",
     "license": "MIT",
     "authors": [
         {
             "name": "Martin Schenk",
-            "email": "mschenk.pda@gmail.com"
+            "email": "mschenk.pda@gmail.com",
+            "homepage": "https://www.martin-schenk.es",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -36,5 +38,7 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
