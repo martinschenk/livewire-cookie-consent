@@ -13,8 +13,7 @@
     "require": {
         "php": "^8.0",
         "livewire/livewire": "^2.5",
-        "wire-elements/modal": "^1.0",
-        "illuminate/http": "^8.0|^9.0"
+        "wire-elements/modal": "^1.0"
     },
     "require-dev": {
         "pestphp/pest": "^1.16",

@@ -20,6 +20,12 @@ composer require martinschenk/livewire-cookie-consent
 ```
 The package will automatically register itself.
 
+If you have not installed livewire, you can do it this way:
+
+``` bash
+composer require livewire/livewire
+```
+
 ## Include Livewire directives
 Include this into your welcome.blade.php or any other base template you use.
 ```html
