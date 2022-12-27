@@ -13,7 +13,7 @@ With the difference to statikbe that it is using Livewire and a different Google
 ## Requirements
 
 1. PHP 7.4 or higher
-2. Laravel 7.0 or higher
+2. Laravel 8.0 or higher
 
 ## Installation
 
