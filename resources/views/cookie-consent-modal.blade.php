@@ -1,8 +1,7 @@
 <div class="m-8 text-sm leading-normal text-gray-600">
 
     <div class="mb-6">
-        {{-- your logo--}}
-        <x-jet-application-logo/>
+        <img src="{{ asset('/vendor/martinschenk/livewire-cookie-consent/LaravelLogo.svg') }}">
     </div>
 
     <div class="mb-6">
