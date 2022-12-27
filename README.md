@@ -10,6 +10,10 @@ This package requires Laravel Jetstream with Livewire https://github.com/livewir
 
 With the difference to statikbe that it is using Livewire and a different Google Tag Manager Configuration.
 
+## Requirements
+
+1. PHP 7.4 or higher
+2. Laravel 7.0 or higher
 
 ## Installation
 
@@ -19,12 +23,6 @@ You can install the package via composer:
 composer require martinschenk/livewire-cookie-consent
 ```
 The package will automatically register itself.
-
-If you have not installed livewire, you can do it this way:
-
-``` bash
-composer require livewire/livewire
-```
 
 ## Include Livewire directives
 Include this into your welcome.blade.php or any other base template you use.
