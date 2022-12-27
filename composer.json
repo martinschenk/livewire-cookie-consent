@@ -13,8 +13,8 @@
         }
     ],
     "require": {
-        "php": "^7.4",
-        "livewire/livewire": "^2.5",
+        "php": "^8.0",
+        "livewire/livewire": "^2.0",
         "wire-elements/modal": "^1.0"
     },
     "require-dev": {
