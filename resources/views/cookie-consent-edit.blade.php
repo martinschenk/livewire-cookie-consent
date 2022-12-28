@@ -13,7 +13,7 @@
     </div>
 
     <div class="flex items-left mb-5">
-        <img src="{{ asset('/vendor/martinschenk/livewire-cookie-consent/public/LaravelLogo.svg') }}">
+        <img src="{{ asset('/vendor/martinschenk/livewire-cookie-consent/LaravelLogo.svg') }}">
     </div>
 
 
