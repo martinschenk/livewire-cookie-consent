@@ -29,10 +29,12 @@
 
                 {{--    gtm-cookie-button is trigger in gtm --}}
                 <div class="gtm-cookie-button flex flex-items justify-end">
-                    <x-jet-button wire:click="acceptAllCookies"
-                                  wire:loading.attr="disabled">
+                    <button
+                        class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition"
+                        wire:click="acceptAllCookies"
+                        wire:loading.attr="disabled">
                         @lang('livewire-cookie-consent::texts.settings_accept_all')
-                    </x-jet-button>
+                    </button>
                 </div>
 
                 <div class="my-6"></div>
@@ -83,9 +85,10 @@
                     <div class="flex flex-items justify-end">
 
                         {{--    gtm-cookie-button is trigger in gtm --}}
-                        <x-jet-button class="gtm-cookie-button" wire:loading.attr="disabled" >
+                        <button class="gtm-cookie-button inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition"
+                                      wire:loading.attr="disabled" >
                             @lang('livewire-cookie-consent::texts.settings_save')
-                        </x-jet-button>
+                        </button>
                     </div>
                 </form>
             </div>
