@@ -8,6 +8,7 @@ Livewire Cookie Consent is a Livewire component that provides Opt-In Cookie Moda
 - Essential and functional cookies
 - Analytical cookies
 - Marketing cookies
+
 Special:
 - No Analytical or Marketing cookies are set before the Opt-In decision of the user (European laws).
 - User can open the modal with link in page-footer to reconfigure his cookie consent selections.
