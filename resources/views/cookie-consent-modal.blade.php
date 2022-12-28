@@ -1,7 +1,7 @@
 <div class="m-8 text-sm leading-normal text-gray-600">
 
     <div class="mb-6">
-        <img src="{{ asset('/vendor/martinschenk/livewire-cookie-consent/LaravelLogo.svg') }}">
+        <img src="{{ asset('/vendor/martinschenk/livewire-cookie-consent/public/LaravelLogo.svg') }}">
     </div>
 
     <div class="mb-6">
