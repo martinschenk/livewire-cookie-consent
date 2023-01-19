@@ -3,8 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
 [![Total Downloads](https://img.shields.io/packagist/dt/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
 
-No cookies set before user consent.
-
+With this package there will be no Cookies set on  your website until the user has accepted the Cookie Policy.
 
 ![Modal cookie consent](docs/img/livewire-cookie-consent-modal1.jpg "Modal 1 for Cookie consent")
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
@@ -147,7 +146,7 @@ You will find the views in resources/views/vendor/livewire-cookie-consent
 php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="views"
 ```
 
-## Google Tag Manager Configuration
+## Configure Google Tag Manager
 If you want to use Google Tag Manager, you will find an example Container script for configuration of GTM [here](./docs/GTM-Github_v16_livewire-cookie-consent.json) 
 
 [Example Container for GTM:](./docs/GTM-Github_v16_livewire-cookie-consent.json)
@@ -209,6 +208,8 @@ Example:
 
 If you discover any security related issues, please email [mschenk.pda@gmail.com](mailto:mschenk.pda@gmail.com) instead of using the issue tracker.
 
-## License
+## Credits
+This package is based on the one from spatie: https://github.com/spatie/laravel-cookie-consent and on statikbe: https://github.com/statikbe/laravel-cookie-consent
 
+## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
