@@ -1,4 +1,10 @@
-# Show a Laravel Livewire Cookie Consent Modal
+# Laravel Livewire Cookie-Consent 
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
+[![Total Downloads](https://img.shields.io/packagist/dt/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
+
+No cookies set before user consent.
+
 
 ![Modal cookie consent](docs/img/livewire-cookie-consent-modal1.jpg "Modal 1 for Cookie consent")
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
