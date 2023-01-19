@@ -94,7 +94,7 @@ Normaly in the footer of your web-page, include this link. It will open the cook
 </a>
 ```
 
-## Publish the views and Logo
+## Publish the views and logo
 The design is done with Tailwind. You can edit and adapt the files.
 You will find the views in resources/views/vendor/livewire-cookie-consent
 ```bash
