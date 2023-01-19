@@ -167,13 +167,12 @@ If you want to use Google Tag Manager, you will find an example Container script
             "containerId": "95560929",
             "name": "www.vissit.io",
             "publicId": "GTM-YOUR-CODE",
-            ...
-            ...
+            
 ```
 
-You can import or merge this GTM Container into your GTM account. Here you can find the [GTM Documentation](https://support.google.com/tagmanager/answer/6106997?hl=en-GB) for importing a Container.
+You can import or merge this GTM Container into your GTM account. Here you can find the [GTM Documentation](https://support.google.com/tagmanager/answer/6106997?hl=en-GB) for importing a Container. Its possible that you have to change the GTM-Code in the GTM Container to your own GTM-Code.
 
-Once configurated you Google Tag Manager, you have to insert the Google Tag Manager Code in the HEAD section of your website this way (between @livewireStyles and @vite...):
+Once configured your Google Tag Manager, you have to insert the Google Tag Manager Code in the HEAD section of your website this way (between @livewireStyles and @vite...):
 
 ```html
     @livewireStyles
