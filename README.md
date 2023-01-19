@@ -150,6 +150,7 @@ php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\Cookie
 ## Google Tag Manager Configuration
 If you want to use Google Tag Manager, you will find an example Container script for configuration of GTM [here](./docs/GTM-Github_v16_livewire-cookie-consent.json) 
 
+[Example Container for GTM:](./docs/GTM-Github_v16_livewire-cookie-consent.json)
 ```json
 {
     "exportFormatVersion": 2,
@@ -173,8 +174,6 @@ If you want to use Google Tag Manager, you will find an example Container script
 You can import or merge this GTM Container into your GTM account. Here you can find the [GTM Documentation](https://support.google.com/tagmanager/answer/6106997?hl=en-GB) for importing a Container.
 
 Once configurated you Google Tag Manager, you have to insert the Google Tag Manager Code in the HEAD section of your website this way (between @livewireStyles and @vite...):
-
-```html
 
 ```html
     @livewireStyles
