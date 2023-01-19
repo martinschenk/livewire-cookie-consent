@@ -67,13 +67,14 @@ php artisan migrate
 ```
 
 
-## Include Livewire directives
+## Include Livewire and vite directives
 Include this into your welcome.blade.php, landing page or any other base template you use.
 ```html
 <html>
 <head>
     ...
     @livewireStyles
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     ...
