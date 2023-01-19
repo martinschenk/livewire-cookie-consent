@@ -185,7 +185,8 @@ Example:
 <head>
     
     ...
-    @livewireStyles
+    @livewireStyles 
+    @livewireStyles 
 
     <!-- Google Tag Manager -->
     <script>
