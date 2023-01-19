@@ -12,6 +12,7 @@ class CookieConsentEdit extends ModalComponent
     public bool $marketingCookies = false;
     private string $consentCookieValue = '';
 
+
     public function mount(CookieConsentModalService $service)
     {
         if ($service->consentCookieExists()){
@@ -21,6 +22,7 @@ class CookieConsentEdit extends ModalComponent
                 $this->analyticsCookies = true;
                 $this->marketingCookies = true;
             }
+
             if ($this->consentCookieValue == config('livewire-cookie-consent.cookie_value_none')){
                 $this->analyticsCookies = false;
                 $this->marketingCookies = false;
@@ -35,6 +37,7 @@ class CookieConsentEdit extends ModalComponent
                 $this->analyticsCookies = false;
                 $this->marketingCookies = true;
             }
+
        }
     }
 

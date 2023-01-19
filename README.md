@@ -142,9 +142,33 @@ php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\Cookie
 ```
 
 ## Google Tag Manager Configuration
-If you want to use Google Tag Manager, you will find an example script for configuration of GTM here: xxxxxxx 
+If you want to use Google Tag Manager, you will find an example Container script for configuration of GTM [here](./docs/GTM-Github_v16_livewire-cookie-consent.json) 
 
-You have to insert the Google Tag Manager Code in the HEAD section this way:
+```json
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-11-25 20:49:55",
+    "containerVersion": {
+        "path": "accounts/6060538801/containers/95560929/versions/16",
+        "accountId": "6060538801",
+        "containerId": "95560929",
+        "containerVersionId": "16",
+        "name": "cookie consent v1.0",
+        "container": {
+            "path": "accounts/6060538801/containers/95560929",
+            "accountId": "6060538801",
+            "containerId": "95560929",
+            "name": "www.vissit.io",
+            "publicId": "GTM-YOUR-CODE",
+            ...
+            ...
+```
+
+You can import or merge this GTM Container into your GTM account. Here you can find the [GTM Documentation](https://support.google.com/tagmanager/answer/6106997?hl=en-GB) for importing a Container.
+
+Once configurated you Google Tag Manager, you have to insert the Google Tag Manager Code in the HEAD section of your website this way (between @livewireStyles and @vite...):
+
+```html
 
 ```html
     @livewireStyles

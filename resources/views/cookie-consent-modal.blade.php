@@ -31,4 +31,6 @@
         @lang('livewire-cookie-consent::texts.alert_settings')
     </button>
 
+
+
 </div>

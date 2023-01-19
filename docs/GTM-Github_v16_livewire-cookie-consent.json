@@ -1,0 +1,535 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-11-25 20:49:55",
+    "containerVersion": {
+        "path": "accounts/6060538801/containers/95560929/versions/16",
+        "accountId": "6060538801",
+        "containerId": "95560929",
+        "containerVersionId": "16",
+        "name": "cookie consent v1.0",
+        "container": {
+            "path": "accounts/6060538801/containers/95560929",
+            "accountId": "6060538801",
+            "containerId": "95560929",
+            "name": "www.vissit.io",
+            "publicId": "GTM-YOUR-CODE",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1666364380153",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6060538801/containers/95560929/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-YOUR-CODE"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "tagId": "25",
+                "name": "Consent Mode update",
+                "type": "cvt_95560929_17",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "update_ad_storage",
+                        "value": "{{bool-ads}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "update_functionality_storage",
+                        "value": "granted"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ads_data_redaction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "update_security_storage",
+                        "value": "granted"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendDataLayer",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "update_analytics_storage",
+                        "value": "{{bool-analytics}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "update_personalization_storage",
+                        "value": "granted"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "command",
+                        "value": "update"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "url_passthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendGtag",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1669404876127",
+                "firingTriggerId": [
+                    "2147479573",
+                    "22",
+                    "38"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "tagId": "33",
+                "name": "Google Analytics GA4 Configuration",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableSendToServerContainer",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "G-4N6QE89SKJ"
+                    }
+                ],
+                "fingerprint": "1669404931225",
+                "firingTriggerId": [
+                    "2147479553",
+                    "39"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "tagId": "35",
+                "name": "Google Analytics Universal Analytics",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google Analytics Settings}}"
+                    }
+                ],
+                "fingerprint": "1669404931224",
+                "firingTriggerId": [
+                    "2147479553",
+                    "39"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "tagId": "36",
+                "name": "cHTML - dataLayer push Consent",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": " <script>\n (function() {\n   window.setTimeout(function() {window.dataLayer.push({'event': 'consentChoice'});}, 500);\n   window.setTimeout(function() {window.dataLayer.push({'event': 'consentUpdated'});}, 800);\n })();\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1669404312987",
+                "firingTriggerId": [
+                    "37"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "triggerId": "22",
+                "name": "cookie_consent",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "cookie-consent"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1669054852865"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "triggerId": "37",
+                "name": "click - consent choice",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Classes}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "gtm-cookie-button"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1669404149988"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "triggerId": "38",
+                "name": "custom - consent choice",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "consentChoice"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1669404820786"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "triggerId": "39",
+                "name": "custom - consent updated",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "consentUpdated"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1669404620912"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "variableId": "23",
+                "name": "cookie-consent-cookie",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "cookie-consent"
+                    }
+                ],
+                "fingerprint": "1668956195326",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "variableId": "24",
+                "name": "Consent State",
+                "type": "cvt_95560929_14",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectTarget",
+                        "value": "all"
+                    }
+                ],
+                "fingerprint": "1668956308751",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "variableId": "26",
+                "name": "bool-analytics",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\nvar coo = {{cookie-consent-cookie}};\nif(coo == '2' || coo == 'true'){\n  return 'granted';\n}else{\n  return 'denied';\n}\n}\n\n  "
+                    }
+                ],
+                "fingerprint": "1669055657147",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "variableId": "27",
+                "name": "bool-ads",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\nvar coo = {{cookie-consent-cookie}};\nif(coo == '3' || coo == 'true'){\n  return 'granted';\n}else{\n  return 'denied';\n}\n}\n\n  "
+                    }
+                ],
+                "fingerprint": "1669055528183",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "variableId": "34",
+                "name": "Google Analytics Settings",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "UA-150942571-1"
+                    }
+                ],
+                "fingerprint": "1669393962223"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            }
+        ],
+        "fingerprint": "1669406213183",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6060538801/containers/95560929/versions/16?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "templateId": "14",
+                "name": "GTM Consent State",
+                "fingerprint": "1668618993051",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"GTM Consent State\",\n  \"categories\": [\n    \"UTILITY\"\n  ],\n  \"description\": \"Get the status of each type of Consent Mode implemented in Google Tag Manager.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"brand\": {\n    \"displayName\": \"Ayudante\",\n    \"id\": \"github.com_Ayudante\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"selectTarget\",\n    \"radioItems\": [\n      {\n        \"value\": \"all\",\n        \"displayValue\": \"All types\"\n      },\n      {\n        \"value\": \"any\",\n        \"displayValue\": \"Any type\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"defaultValue\": \"all\",\n    \"help\": \"Select the name of the Consent Type you want to retrieve.\\u003cbr\\u003e\\nIf you select \\\"\\u003cb\\u003eAll types\\u003c/b\\u003e\\\", you will get the status of the five types provided by default as an \\u003cb\\u003eobject\\u003c/b\\u003e.\\u003cbr\\u003e\\nif you select \\u003cb\\u003e\\\"Any type\\\"\\u003c/b\\u003e, you will get the value of the type as \\u003cb\\u003etrue/false\\u003c/b\\u003e.\",\n    \"displayName\": \"Get type\"\n  },\n  {\n    \"type\": \"SELECT\",\n    \"name\": \"getType\",\n    \"macrosInSelect\": false,\n    \"selectItems\": [\n      {\n        \"value\": \"ad\",\n        \"displayValue\": \"ad_storage\"\n      },\n      {\n        \"value\": \"analytics\",\n        \"displayValue\": \"analytics_storage\"\n      },\n      {\n        \"value\": \"functional\",\n        \"displayValue\": \"functional_storage\"\n      },\n      {\n        \"value\": \"personalization\",\n        \"displayValue\": \"personalization_storage\"\n      },\n      {\n        \"value\": \"security\",\n        \"displayValue\": \"security_storage\"\n      },\n      {\n        \"value\": \"custom\",\n        \"displayValue\": \"\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"alwaysInSummary\": true,\n    \"help\": \"If you want to get a type that is not provided by default, select the blank box and enter the name of the type you want to get.\",\n    \"defaultValue\": \"ad\",\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"selectTarget\",\n        \"paramValue\": \"all\",\n        \"type\": \"NOT_EQUALS\"\n      }\n    ],\n    \"displayName\": \"Type name\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"customName\",\n    \"displayName\": \"\",\n    \"simpleValueType\": true,\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"getType\",\n        \"paramValue\": \"custom\",\n        \"type\": \"EQUALS\"\n      }\n    ],\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ],\n    \"notSetText\": \"[Required value.]\"\n  },\n  {\n    \"type\": \"LABEL\",\n    \"name\": \"customNote\",\n    \"displayName\": \"\\u003cb\\u003eNote\\u003c/b\\u003e: If you want to get a custom type, you need to add the name of the type you want to get to the \\u003cb\\u003epermissions\\u003c/b\\u003e of the variable template with read permissions.\\u003cbr\\u003e\\nIf the permission is not set, the value of this variable will be undefined.\",\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"getType\",\n        \"paramValue\": \"custom\",\n        \"type\": \"EQUALS\"\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n// 初期設定\nconst queryPermission = require('queryPermission');\nconst isConsentGranted = require('isConsentGranted');\nconst getTypeName = {\n\t'ad': 'ad_storage',\n\t'analytics': 'analytics_storage',\n\t'functional': 'functional_storage',\n\t'personalization': 'personalization_storage',\n\t'security': 'security_storage',\n\t'custom': data.customName\n};\n\n// 取得処理\nswitch(data.selectTarget){\n\tcase 'all':\n\t\tif(queryPermission('access_consent', 'ad_storage', 'read') && queryPermission('access_consent', 'analytics_storage', 'read') && queryPermission('access_consent', 'functional_storage', 'read') && queryPermission('access_consent', 'personalization_storage', 'read') && queryPermission('access_consent', 'security_storage', 'read')){\n\t\t\treturn {\n\t\t\t\tad_storage: isConsentGranted('ad_storage'),\n\t\t\t\tanalytics_storage: isConsentGranted('analytics_storage'),\n\t\t\t\tfunctional_storage: isConsentGranted('functional_storage'),\n\t\t\t\tpersonalization_storage: isConsentGranted('personalization_storage'),\n\t\t\t\tsecurity_storage: isConsentGranted('security_storage')\n\t\t\t};\n\t\t}\n\t\tbreak;\n\tdefault:\n\t\tif(queryPermission('access_consent', getTypeName[data.getType], 'read')) return isConsentGranted(getTypeName[data.getType]);\n}\n\n// 例外処理\nreturn undefined;\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"functional_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"personalization_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"security_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios:\n- name: all\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'all'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n- name: ad\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'any',\n      getType: 'ad'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n- name: analytics\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'any',\n      getType: 'analytics'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n- name: functional\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'any',\n      getType: 'functional'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n- name: personalization\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'any',\n      getType: 'personalization'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n- name: security\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'any',\n      getType: 'security'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n- name: custom - testC\n  code: |-\n    const mockData = {\n      // Mocked field values\n      selectTarget: 'any',\n      getType: 'custom',\n      customName: 'testC'\n    };\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isNotEqualTo(undefined);\n\n\n___NOTES___\n\nCreated on 2021/6/21 12:59:49\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "Ayudante",
+                    "repository": "gtm-consent-state",
+                    "version": "78df2c93fc26f5c6cbcb1fc03e5bbf9580744360",
+                    "signature": "147f82d1b3183e6f91614cdeefcee3739a4baef634734cb6ca82bd1f156de31c"
+                }
+            },
+            {
+                "accountId": "6060538801",
+                "containerId": "95560929",
+                "templateId": "17",
+                "name": "Consent Mode (Google tags)",
+                "fingerprint": "1668620266040",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"__wm\": \"VGVtcGFsdGUtQXV0aG9yX0NvbnNlbnRNb2RlLVNpbW8tQWhhdmE\\u003d\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Consent Mode (Google tags)\",\n  \"categories\": [\n    \"UTILITY\",\n    \"ANALYTICS\",\n    \"ADVERTISING\"\n  ],\n  \"brand\": {\n    \"id\": \"github.com_gtm-templates-simo-ahava\",\n    \"displayName\": \"gtm-templates-simo-ahava\",\n    \"thumbnail\": \"data:image/png;base64,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\\u003d\\u003d\"\n  },\n  \"description\": \"Adjust tag behavior based on consent. This template utilizes Google\\u0027s Consent API and can be used to adjust how Google\\u0027s advertising and analytics use cookies and process ad identifiers.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"SELECT\",\n    \"name\": \"command\",\n    \"displayName\": \"Consent Command\",\n    \"selectItems\": [\n      {\n        \"value\": \"default\",\n        \"displayValue\": \"Default\"\n      },\n      {\n        \"value\": \"update\",\n        \"displayValue\": \"Update\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"help\": \"\\u003cstrong\\u003eDefault\\u003c/strong\\u003e means that you establish consent settings the site falls back on until such a time that the Update command is executed. \\u003cstrong\\u003eUpdate\\u003c/strong\\u003e is what you\\u0027d use once you\\u0027ve retrieved a consent status from the user.\",\n    \"defaultValue\": \"default\",\n    \"alwaysInSummary\": true\n  },\n  {\n    \"type\": \"GROUP\",\n    \"name\": \"defaultSettings\",\n    \"displayName\": \"Default Consent Settings\",\n    \"groupStyle\": \"NO_ZIPPY\",\n    \"subParams\": [\n      {\n        \"type\": \"PARAM_TABLE\",\n        \"name\": \"settingsTable\",\n        \"paramTableColumns\": [\n          {\n            \"param\": {\n              \"type\": \"SELECT\",\n              \"name\": \"ad_storage\",\n              \"displayName\": \"Advertising\",\n              \"macrosInSelect\": true,\n              \"selectItems\": [\n                {\n                  \"value\": \"granted\",\n                  \"displayValue\": \"granted\"\n                },\n                {\n                  \"value\": \"denied\",\n                  \"displayValue\": \"denied\"\n                }\n              ],\n              \"simpleValueType\": true,\n              \"defaultValue\": \"granted\",\n              \"help\": \"If set to \\u003cstrong\\u003edenied\\u003c/strong\\u003e, Google\\u0027s advertising tags and pixels will not be able to read or write first-party cookies. The use of third-party cookies is limited to only spam and fraud detection purposes. \\u003ca href\\u003d\\\"https://support.google.com/analytics/answer/9976101#behavior\\\"\\u003eMore information\\u003c/a\\u003e\"\n            },\n            \"isUnique\": false\n          },\n          {\n            \"param\": {\n              \"type\": \"SELECT\",\n              \"name\": \"analytics_storage\",\n              \"displayName\": \"Analytics\",\n              \"macrosInSelect\": true,\n              \"selectItems\": [\n                {\n                  \"value\": \"granted\",\n                  \"displayValue\": \"granted\"\n                },\n                {\n                  \"value\": \"denied\",\n                  \"displayValue\": \"denied\"\n                }\n              ],\n              \"simpleValueType\": true,\n              \"defaultValue\": \"granted\",\n              \"help\": \"If set to \\u003cstrong\\u003edenied\\u003c/strong\\u003e, Google Analytics tags will not read or write the first-party cookie, and data collected to Google Analytics will not utilize persistent cookie identifiers (the identifiers are reset with every page load). \\u003ca href\\u003d\\\"https://support.google.com/analytics/answer/9976101#behavior\\\"\\u003eMore information\\u003c/a\\u003e.\"\n            },\n            \"isUnique\": false\n          },\n          {\n            \"param\": {\n              \"type\": \"SELECT\",\n              \"name\": \"personalization_storage\",\n              \"displayName\": \"Personalization\",\n              \"macrosInSelect\": true,\n              \"selectItems\": [\n                {\n                  \"value\": \"granted\",\n                  \"displayValue\": \"granted\"\n                },\n                {\n                  \"value\": \"denied\",\n                  \"displayValue\": \"denied\"\n                }\n              ],\n              \"simpleValueType\": true,\n              \"defaultValue\": \"granted\"\n            },\n            \"isUnique\": false\n          },\n          {\n            \"param\": {\n              \"type\": \"SELECT\",\n              \"name\": \"functionality_storage\",\n              \"displayName\": \"Functionality\",\n              \"macrosInSelect\": true,\n              \"selectItems\": [\n                {\n                  \"value\": \"granted\",\n                  \"displayValue\": \"granted\"\n                },\n                {\n                  \"value\": \"denied\",\n                  \"displayValue\": \"denied\"\n                }\n              ],\n              \"simpleValueType\": true,\n              \"defaultValue\": \"granted\"\n            },\n            \"isUnique\": false\n          },\n          {\n            \"param\": {\n              \"type\": \"SELECT\",\n              \"name\": \"security_storage\",\n              \"displayName\": \"Security\",\n              \"macrosInSelect\": true,\n              \"selectItems\": [\n                {\n                  \"value\": \"granted\",\n                  \"displayValue\": \"granted\"\n                },\n                {\n                  \"value\": \"denied\",\n                  \"displayValue\": \"denied\"\n                }\n              ],\n              \"simpleValueType\": true,\n              \"defaultValue\": \"granted\"\n            },\n            \"isUnique\": false\n          },\n          {\n            \"param\": {\n              \"type\": \"TEXT\",\n              \"name\": \"wait_for_update\",\n              \"displayName\": \"Wait for Update\",\n              \"simpleValueType\": true,\n              \"valueUnit\": \"milliseconds\",\n              \"defaultValue\": 500,\n              \"help\": \"How long to wait (in milliseconds) for an \\u003cstrong\\u003eUpdate\\u003c/strong\\u003e command before firing Google tags that have been queued up.\"\n            },\n            \"isUnique\": false\n          },\n          {\n            \"param\": {\n              \"type\": \"TEXT\",\n              \"name\": \"regions\",\n              \"displayName\": \"Regions\",\n              \"simpleValueType\": true,\n              \"defaultValue\": \"all\",\n              \"help\": \"Apply this setting to users from these \\u003ca href\\u003d\\\"https://en.wikipedia.org/wiki/ISO_3166-2\\\"\\u003eregions\\u003c/a\\u003e (provide a comma-separated list). If you select \\u003cstrong\\u003eall\\u003c/strong\\u003e, the setting will apply to all users.\"\n            },\n            \"isUnique\": false\n          }\n        ],\n        \"newRowButtonText\": \"Add Setting\",\n        \"editRowTitle\": \"Edit Setting\",\n        \"newRowTitle\": \"Add Setting\",\n        \"valueValidators\": [\n          {\n            \"type\": \"TABLE_ROW_COUNT\",\n            \"args\": [\n              1\n            ],\n            \"errorMessage\": \"You must add at least one default setting.\"\n          }\n        ]\n      }\n    ],\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"command\",\n        \"paramValue\": \"default\",\n        \"type\": \"EQUALS\"\n      }\n    ]\n  },\n  {\n    \"type\": \"GROUP\",\n    \"name\": \"updateSettings\",\n    \"displayName\": \"Update Consent Settings\",\n    \"groupStyle\": \"NO_ZIPPY\",\n    \"subParams\": [\n      {\n        \"type\": \"SELECT\",\n        \"name\": \"update_ad_storage\",\n        \"displayName\": \"Advertising\",\n        \"macrosInSelect\": true,\n        \"selectItems\": [\n          {\n            \"value\": \"granted\",\n            \"displayValue\": \"granted\"\n          },\n          {\n            \"value\": \"denied\",\n            \"displayValue\": \"denied\"\n          }\n        ],\n        \"simpleValueType\": true,\n        \"defaultValue\": \"granted\",\n        \"help\": \"If set to \\u003cstrong\\u003edenied\\u003c/strong\\u003e, Google\\u0027s advertising tags and pixels will not be able to read or write first-party cookies. The use of third-party cookies is limited to only spam and fraud detection purposes. \\u003ca href\\u003d\\\"https://support.google.com/analytics/answer/9976101#behavior\\\"\\u003eMore information\\u003c/a\\u003e.\"\n      },\n      {\n        \"type\": \"SELECT\",\n        \"name\": \"update_analytics_storage\",\n        \"displayName\": \"Analytics\",\n        \"macrosInSelect\": true,\n        \"selectItems\": [\n          {\n            \"value\": \"granted\",\n            \"displayValue\": \"granted\"\n          },\n          {\n            \"value\": \"denied\",\n            \"displayValue\": \"denied\"\n          }\n        ],\n        \"simpleValueType\": true,\n        \"defaultValue\": \"granted\",\n        \"help\": \"If set to \\u003cstrong\\u003edenied\\u003c/strong\\u003e, Google Analytics tags will not read or write analytics cookies, and data collected to Google Analytics will not utilize persistent cookie identifiers (the identifiers are reset with every page load). \\u003ca href\\u003d\\\"https://support.google.com/analytics/answer/9976101#behavior\\\"\\u003eMore information\\u003c/a\\u003e.\"\n      },\n      {\n        \"type\": \"SELECT\",\n        \"name\": \"update_personalization_storage\",\n        \"displayName\": \"Personalization\",\n        \"macrosInSelect\": true,\n        \"selectItems\": [\n          {\n            \"value\": \"granted\",\n            \"displayValue\": \"granted\"\n          },\n          {\n            \"value\": \"denied\",\n            \"displayValue\": \"denied\"\n          }\n        ],\n        \"simpleValueType\": true,\n        \"defaultValue\": \"granted\"\n      },\n      {\n        \"type\": \"SELECT\",\n        \"name\": \"update_functionality_storage\",\n        \"displayName\": \"Functionality\",\n        \"macrosInSelect\": true,\n        \"selectItems\": [\n          {\n            \"value\": \"granted\",\n            \"displayValue\": \"granted\"\n          },\n          {\n            \"value\": \"denied\",\n            \"displayValue\": \"denied\"\n          }\n        ],\n        \"simpleValueType\": true,\n        \"defaultValue\": \"granted\"\n      },\n      {\n        \"type\": \"SELECT\",\n        \"name\": \"update_security_storage\",\n        \"displayName\": \"Security\",\n        \"macrosInSelect\": true,\n        \"selectItems\": [\n          {\n            \"value\": \"granted\",\n            \"displayValue\": \"granted\"\n          },\n          {\n            \"value\": \"denied\",\n            \"displayValue\": \"denied\"\n          }\n        ],\n        \"simpleValueType\": true,\n        \"defaultValue\": \"granted\"\n      }\n    ],\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"command\",\n        \"paramValue\": \"update\",\n        \"type\": \"EQUALS\"\n      }\n    ]\n  },\n  {\n    \"type\": \"GROUP\",\n    \"name\": \"other\",\n    \"displayName\": \"Other Settings\",\n    \"groupStyle\": \"ZIPPY_OPEN\",\n    \"subParams\": [\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"url_passthrough\",\n        \"checkboxText\": \"Pass Ad Click Information Through URLs\",\n        \"simpleValueType\": true,\n        \"help\": \"Check this if you want internal links to pass advertising identifiers (\\u003cstrong\\u003egclid\\u003c/strong\\u003e, \\u003cstrong\\u003edclid\\u003c/strong\\u003e, \\u003cstrong\\u003egclsrc\\u003c/strong\\u003e, \\u003cstrong\\u003e_gl\\u003c/strong\\u003e) in the link URL while waiting for consent to be granted.\"\n      },\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"ads_data_redaction\",\n        \"checkboxText\": \"Redact Ads Data\",\n        \"simpleValueType\": true,\n        \"help\": \"If this is checked \\u003cstrong\\u003eand\\u003c/strong\\u003e Advertising consent status is \\u003cstrong\\u003edenied\\u003c/strong\\u003e, Google\\u0027s advertising tags will drop all advertising identifiers from the requests, and traffic will be routed through cookieless domains.\"\n      },\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"sendDataLayer\",\n        \"checkboxText\": \"Push dataLayer Event\",\n        \"simpleValueType\": true,\n        \"help\": \"When consent is set to \\\"default\\\", a dataLayer event with \\u003cstrong\\u003eevent: \\u0027gtm_consent_default\\u0027\\u003c/strong\\u003e is sent, together with consent state for both \\u003cstrong\\u003ead_storage\\u003c/strong\\u003e and \\u003cstrong\\u003eanalytics_storage\\u003c/strong\\u003e. When an \\\"update\\\" is fired, a dataLayer event with \\u003cstrong\\u003eevent: \\u0027gtm_consent_update\\u0027\\u003c/strong\\u003e is pushed together with details about the updated consent state.\"\n      },\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"sendGtag\",\n        \"checkboxText\": \"Fire the Global Site Tag (gtag) command\",\n        \"simpleValueType\": true,\n        \"help\": \"Only check this if you also want to generate a gtag() command for consent. This should be unnecessary, but the option is left here for compatibility.\",\n        \"defaultValue\": false\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst dataLayerPush = require('createQueue')('dataLayer');\nconst gtag = require('createArgumentsQueue')('gtag', 'dataLayer');\nconst gtagSet = require('gtagSet');\nconst log = require('logToConsole');\nconst makeTableMap = require('makeTableMap');\nconst setDefaultConsentState = require('setDefaultConsentState');\nconst updateConsentState = require('updateConsentState');\n\n// Set advanced settings\ngtagSet({\n  url_passthrough: data.url_passthrough || false,\n  ads_data_redaction: data.ads_data_redaction || false\n});\n\n// dataLayer.push helper\nconst dlPush = (isDefault, ads, analytics, personalization, functionality, security, region) => {\n  dataLayerPush({\n    event: 'gtm_consent_' + (isDefault ? 'default' : 'update'),\n    ad_storage: ads,\n    analytics_storage: analytics,\n    personalization_storage: personalization,\n    functionality_storage: functionality,\n    security_storage: security,\n    consent_region: region\n  });\n};\n\n// Process default consent state\nif (data.command === 'default') {\n  data.settingsTable.forEach(setting => {\n    const settingObject = {\n      ad_storage: setting.ad_storage,\n      analytics_storage: setting.analytics_storage,\n      personalization_storage: setting.personalization_storage,\n      functionality_storage: setting.functionality_storage,\n      security_storage: setting.security_storage,\n      wait_for_update: setting.wait_for_update\n    };\n    if (setting.regions !== 'all') {\n      settingObject.region = setting.regions.split(',').map(r => r.trim());\n    }\n    setDefaultConsentState(settingObject);\n    if (data.sendGtag) gtag('consent', 'default', settingObject);\n    if (data.sendDataLayer) {\n      dlPush(true, setting.ad_storage, setting.analytics_storage, setting.personalization_storage, setting.functionality_storage, setting.security_storage, settingObject.region);\n    }\n  });\n}\n\n// Process updated consent state\nif (data.command === 'update') {\n  if (data.sendGtag) {\n    gtag('consent', 'update', {\n      ad_storage: data.update_ad_storage,\n      analytics_storage: data.update_analytics_storage,\n      personalization_storage: data.update_personalization_storage,\n      functionality_storage: data.update_functionality_storage,\n      security_storage: data.update_security_storage\n    });\n  }\n  updateConsentState({\n    ad_storage: data.update_ad_storage,\n    analytics_storage: data.update_analytics_storage,\n    personalization_storage: data.update_personalization_storage,\n    functionality_storage: data.update_functionality_storage,\n    security_storage: data.update_security_storage\n  });\n  if (data.sendDataLayer) {\n    dlPush(false, data.update_ad_storage, data.update_analytics_storage, data.update_personalization_storage, data.update_functionality_storage, data.update_security_storage);\n  }\n}\n\n// Call data.gtmOnSuccess when the tag is finished.\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"debug\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"gtag\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"dataLayer\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"wait_for_update\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"personalization_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"functionality_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"security_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"write_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keyPatterns\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"url_passthrough\"\n              },\n              {\n                \"type\": 1,\n                \"string\": \"ads_data_redaction\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios:\n- name: gtag command created\n  code: |-\n    mock('createArgumentsQueue', (cmd, arr) => {\n      assertThat(cmd).isEqualTo('gtag');\n      assertThat(arr).isEqualTo('dataLayer');\n      return () => {};\n    });\n\n    // Call runCode to run the template's code.\n    runCode(mockData);\n\n    // Verify that the tag finished successfully.\n    assertApi('gtmOnSuccess').wasCalled();\n- name: default settings sent\n  code: |-\n    let index = 1;\n    mockData.sendGtag = true;\n    mock('createArgumentsQueue', () => {\n      return function() {\n        if (arguments[0] === 'consent' && index === 1) {\n          assertThat(arguments[2]).isEqualTo({\n            ad_storage: 'granted',\n            analytics_storage: 'denied',\n            personalization_storage: 'denied',\n            functionality_storage: 'denied',\n            security_storage: 'denied',\n            wait_for_update: 500\n          });\n          index++;\n        } else if (arguments[0] === 'consent' && index === 2) {\n          assertThat(arguments[2]).isEqualTo({\n            ad_storage: 'denied',\n            analytics_storage: 'granted',\n            personalization_storage: 'granted',\n            functionality_storage: 'granted',\n            security_storage: 'granted',\n            wait_for_update: 1000,\n            region: ['ES', 'US-AK']\n          });\n        }\n      };\n    });\n    // Call runCode to run the template's code.\n    runCode(mockData);\n\n    // Verify that the tag finished successfully.\n    assertApi('setDefaultConsentState').wasCalledWith({\n      ad_storage: 'granted',\n      analytics_storage: 'denied',\n      personalization_storage: 'denied',\n      functionality_storage: 'denied',\n      security_storage: 'denied',\n      wait_for_update: 500\n    });\n    assertApi('setDefaultConsentState').wasCalledWith({\n      ad_storage: 'denied',\n      analytics_storage: 'granted',\n      personalization_storage: 'granted',\n      functionality_storage: 'granted',\n      security_storage: 'granted',\n      region: ['ES', 'US-AK'],\n      wait_for_update: 1000\n    });\n    assertApi('gtmOnSuccess').wasCalled();\n- name: updated settings sent\n  code: |-\n    mockData.command = 'update';\n\n    mock('createArgumentsQueue', () => {\n      return function() {\n        if (arguments[0] === 'consent') {\n          assertThat(arguments[2]).isEqualTo({\n            ad_storage: 'denied',\n            analytics_storage: 'granted',\n            personalization_storage: 'granted',\n            functionality_storage: 'granted',\n            security_storage: 'granted'\n          });\n        }\n      };\n    });\n    // Call runCode to run the template's code.\n    runCode(mockData);\n\n    // Verify that the tag finished successfully.\n    assertApi('updateConsentState').wasCalledWith({\n      ad_storage: 'denied',\n      analytics_storage: 'granted',\n      personalization_storage: 'granted',\n      functionality_storage: 'granted',\n      security_storage: 'granted'\n    });\n    assertApi('gtmOnSuccess').wasCalled();\n- name: extra settings sent\n  code: |-\n    mock('gtagSet', (obj) => {\n      assertThat(obj.url_passthrough).isEqualTo(true);\n      assertThat(obj.ads_data_redaction).isEqualTo(true);\n    });\n    // Call runCode to run the template's code.\n    runCode(mockData);\n\n    // Verify that the tag finished successfully.\n    assertApi('gtmOnSuccess').wasCalled();\n- name: dataLayer events generated\n  code: \"mockData.sendDataLayer = true;\\n\\nlet dlCalled = 0;\\n\\nmock('createQueue',\\\n    \\ name => {\\n  return o => {\\n    require('logToConsole')(o);\\n    if (o.event\\\n    \\ === 'gtm_consent_default' && o.ad_storage === 'granted' && o.analytics_storage\\\n    \\ === 'denied' && o.personalization_storage === 'denied') dlCalled++;\\n    if\\\n    \\ (o.event === 'gtm_consent_default' && o.ad_storage === 'denied' && o.analytics_storage\\\n    \\ === 'granted' && o.personalization_storage === 'granted' && o.consent_region.join()\\\n    \\ === 'ES,US-AK') dlCalled++;\\n  };\\n});\\n    \\n// Call runCode to run the template's\\\n    \\ code.\\nrunCode(mockData);\\n\\n// Verify that the tag finished successfully.\\n\\\n    assertApi('gtmOnSuccess').wasCalled();\\nassertThat(dlCalled, 'dataLayer not called\\\n    \\ with correct arguments').isEqualTo(2);\"\nsetup: |-\n  const mockData = {\n    command: 'default',\n    settingsTable: [{\n      ad_storage: 'granted',\n      analytics_storage: 'denied',\n      personalization_storage: 'denied',\n      functionality_storage: 'denied',\n      security_storage: 'denied',\n      wait_for_update: 500,\n      regions: 'all'\n    },{\n      ad_storage: 'denied',\n      analytics_storage: 'granted',\n      personalization_storage: 'granted',\n      functionality_storage: 'granted',\n      security_storage: 'granted',\n      wait_for_update: 1000,\n      regions: 'ES, US-AK'\n    }],\n    update_analytics_storage: 'granted',\n    update_ad_storage: 'denied',\n    update_personalization_storage: 'granted',\n    update_functionality_storage: 'granted',\n    update_security_storage: 'granted',\n    url_passthrough: true,\n    ads_data_redaction: true,\n    sendDataLayer: false,\n    sendGtag: false\n  };\n\n\n___NOTES___\n\nCreated on 07/10/2020, 10:39:35\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "gtm-templates-simo-ahava",
+                    "repository": "consent-mode",
+                    "version": "ab3c243d7bcce3ae417eef63296a9f653ee685f0",
+                    "signature": "07bf93bb2cb76b82ac1eb18d3a9f44b9daa85c0b165092dd2a4a1732ac5d1116"
+                }
+            }
+        ]
+    }
+}
