@@ -30,14 +30,17 @@ Jetstream should only be installed into new Laravel applications. Attempting to 
 
 ## Installation
 
-If you haven't installed Jetstream and Livewire
+### If you haven't installed Jetstream and Livewire
 
 ``` bash
 composer require laravel/jetstream
 
 php artisan jetstream:install livewire
+npm install
+npm run build
+php artisan migrate
 ```
-And now install the package
+### And now install the package
 
 ``` bash
 composer require martinschenk/livewire-cookie-consent
