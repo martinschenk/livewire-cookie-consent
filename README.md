@@ -3,7 +3,9 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
 [![Total Downloads](https://img.shields.io/packagist/dt/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
 
-With this package there will be no Cookies set on  your website until the user has accepted the Cookie Policy.
+With this package there will be set no (Google Marketing & Analytics) Cookies on your website, until the user has accepted the Cookie Policy. (Except essential and funtionality cookies).
+
+You can add in your Google Tag Manager triggers for every other Cookie, you wish to control.
 
 ![Modal cookie consent](docs/img/livewire-cookie-consent-modal1.jpg "Modal 1 for Cookie consent")
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
