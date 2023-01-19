@@ -94,6 +94,14 @@ Normaly in the footer of your web-page, include this link. It will open the cook
 </a>
 ```
 
+## Now it should work
+Do just 
+```bash
+   php artisan optimize:clear
+   npm run dev
+```
+and you should see popup the modal if you reload your webpage.
+
 ## Publishing
 ### Customising the dialog texts and languages
 
