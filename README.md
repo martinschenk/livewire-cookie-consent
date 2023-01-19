@@ -94,6 +94,14 @@ Normaly in the footer of your web-page, include this link. It will open the cook
 </a>
 ```
 
+## Publish the views and logo
+The design is done with Tailwind. You can edit and adapt the files.
+You will find the views in resources/views/vendor/livewire-cookie-consent
+```bash
+php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="views"
+```
+
+
 ## Now it should work
 Do just 
 ```bash
@@ -102,8 +110,8 @@ Do just
 ```
 and you should see popup the modal if you reload your webpage.
 
-## Publishing
-### Customising the dialog texts and languages
+## Publish the rest if you want to
+### Dialog texts and languages
 
 If you want to modify the text shown in the dialog you can publish the lang-files with this command:
 
@@ -123,7 +131,7 @@ return [
 
 ```
 
-### Config
+### Config file
 Be careful changing the config values, because the Google Tag Manager is using them. Only change them if you know what you do.
 ```bash
 php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="config"
@@ -151,12 +159,6 @@ return
 
 ```
 
-### Views
-If you publish the views, you can edit them. The design is done with Tailwind.
-You will find the views in resources/views/vendor/livewire-cookie-consent
-```bash
-php artisan vendor:publish --provider="Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider" --tag="views"
-```
 
 ## Configure Google Tag Manager
 If you want to use Google Tag Manager, you will find an example Container script for configuration of GTM [here](./docs/GTM-Github_v16_livewire-cookie-consent.json) 
