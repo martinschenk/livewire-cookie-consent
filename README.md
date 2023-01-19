@@ -3,9 +3,9 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
 [![Total Downloads](https://img.shields.io/packagist/dt/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
 
-With this package there will be set no (Google Marketing & Analytics) Cookies on your website, until the user has accepted the Cookie Policy. (Except essential and funtionality cookies).
+With this package there will be set no (Google Marketing & Analytics) Cookies on your website, until the user has accepted the Cookie Policy. (Except essential and funtionality cookies). All of this, because of the crazy EU Cookie Law.
 
-You can add in your Google Tag Manager triggers for every other Cookie, you wish to control.
+
 
 ![Modal cookie consent](docs/img/livewire-cookie-consent-modal1.jpg "Modal 1 for Cookie consent")
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
@@ -20,6 +20,7 @@ Special:
 - No Analytical or Marketing cookies are set before the Opt-In decision of the user (European laws).
 - User can open the modal with link in page-footer to reconfigure his cookie consent selections.
 - You can connect this component to Google Tag Manager if you want to. GTM example Script is included.
+- You can add in your Google Tag Manager triggers for every other Cookie, you wish to control.
 
 ## Requirements
 
