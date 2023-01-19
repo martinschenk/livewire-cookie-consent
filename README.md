@@ -36,9 +36,6 @@ Jetstream should only be installed into new Laravel applications. Attempting to 
 composer require laravel/jetstream
 
 php artisan jetstream:install livewire
-npm install
-npm run build
-php artisan migrate
 ```
 ### And now install the package
 
