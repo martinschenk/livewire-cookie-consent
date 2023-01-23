@@ -217,7 +217,7 @@ Example:
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 ```
-
+Replace GTM-YOURKEY with your Google Tag Manager Key.
 
 ## Security
 
