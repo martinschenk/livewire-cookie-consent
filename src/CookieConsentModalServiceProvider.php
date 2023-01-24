@@ -13,8 +13,6 @@ class CookieConsentModalServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->register('Martinschenk\LivewireCookieConsent\CookieConsentModalServiceProvider');
-        
         $this->mergeConfigFrom(__DIR__.'/../config/livewire-cookie-consent.php', 'livewire-cookie-consent');
     }
 
