@@ -200,7 +200,6 @@ Example:
     
     ...
     @livewireStyles 
-    @livewireStyles 
 
     <!-- Google Tag Manager -->
     <script>
