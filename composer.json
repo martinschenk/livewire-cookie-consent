@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Martinschenk\\LivewireCookieConsent\\": "src"
+            "Martinschenk\\LivewireCookieConsent\\": "src/"
         }
     },
     "extra": {
