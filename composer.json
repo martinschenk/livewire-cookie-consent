@@ -1,7 +1,7 @@
 {
     "name": "martinschenk/livewire-cookie-consent",
-    "description": "livewire cookie consent modals for EU with laravel livewire",
-    "keywords": ["laravel", "livewire", "cookie", "consent", "cookie-consent", "modal", "law", "EU"],
+    "description": "livewire cookie consent modals with laravel livewire",
+    "keywords": ["laravel", "livewire", "cookie", "consent", "cookie-consent", "modal"],
     "homepage": "https://github.com/martinschenk/livewire-cookie-consent",
     "license": "MIT",
     "authors": [
