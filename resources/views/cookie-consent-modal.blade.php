@@ -1,6 +1,7 @@
 <div class="m-8 text-sm leading-normal text-gray-600">
 
     <div class="mb-6">
+        {{-- path to your Logo --}}
         <img src="{{ asset('/vendor/martinschenk/livewire-cookie-consent/LaravelLogo.svg') }}">
     </div>
 
