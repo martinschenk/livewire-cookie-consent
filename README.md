@@ -5,7 +5,9 @@
 
 With [this package](https://github.com/martinschenk/livewire-cookie-consent) there will be set no (Google Marketing & Analytics) Cookies on your website, until the user has accepted the Cookie Policy. (Except essential and funtionality cookies). All of this, because of the crazy EU Cookie Law.
 
+## ⚠️ Maintenance Notice
 
+**This package is no longer actively maintained.** This package was built for Laravel 9/10 with Jetstream and Livewire v2 (created in late 2022). While it may continue to work with current Laravel/Livewire versions, I'm not providing regular updates or bug fixes. Feel free to fork the repository if you need ongoing maintenance or want to contribute improvements.
 
 ![Modal cookie consent](docs/img/livewire-cookie-consent-modal1.jpg "Modal 1 for Cookie consent")
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
@@ -24,7 +26,9 @@ Special:
 
 ## Requirements
 
-Laravel Jetstream with Livewire
+- Laravel 9/10
+- Laravel Jetstream with Livewire v2
+- PHP 8.0+
 
 Jetstream should only be installed into new Laravel applications. Attempting to install Jetstream into an existing Laravel application will result in unexpected behavior and issues
 
