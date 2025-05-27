@@ -1,3 +1,19 @@
+# 🆕 **Alternative: Try the new Simple GDPR Cookie Consent Available!**
+
+**🚀 [Try the lightweight Laravel Cookie Consent Plugin](https://github.com/martinschenk/laravel-cookie-consent)**
+
+Looking for something simpler? This alternative plugin offers:
+- ✅ **Framework-independent** - no Laravel or JavaScript framework dependencies
+- ✅ **Ultra-lightweight** - minimal footprint, maximum performance  
+- ✅ **GDPR-compliant out-of-the-box** - automatically blocks Google Analytics until consent
+- ✅ **Dead simple setup** - just add your Google Analytics ID and you're done
+- ✅ **User-friendly modals** - clean, responsive consent interface
+- ✅ **Persistent user control** - footer link allows users to change preferences anytime
+
+**Perfect for projects that need** straightforward cookie consent without complex dependencies or extensive configuration. Ideal if you want to get GDPR compliance up and running in minutes.
+
+---
+
 # Laravel Livewire Cookie-Consent Modal
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/martinschenk/livewire-cookie-consent.svg?style=flat-square)](https://packagist.org/packages/martinschenk/livewire-cookie-consent)
@@ -8,6 +24,8 @@ With [this package](https://github.com/martinschenk/livewire-cookie-consent) the
 ## ⚠️ Maintenance Notice
 
 **This package is no longer actively maintained.** This package was built for Laravel 9/10 with Jetstream and Livewire v2 (created in late 2022). While it may continue to work with current Laravel/Livewire versions, I'm not providing regular updates or bug fixes. Feel free to fork the repository if you need ongoing maintenance or want to contribute improvements.
+
+**👆 Consider upgrading to the [new lightweight Laravel Cookie Consent Plugin](https://github.com/martinschenk/laravel-cookie-consent) instead!**
 
 ![Modal cookie consent](docs/img/livewire-cookie-consent-modal1.jpg "Modal 1 for Cookie consent")
 ![Preferences Modal](docs/img/livewire-cookie-consent-modal2.jpg "Modal 2 preferences for cookie consent")
